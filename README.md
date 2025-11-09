@@ -11,7 +11,7 @@
 | 🖥️ **Front-end** | [Angular](https://angular.io/) |
 | ⚙️ **Back-end** | [Spring Boot (Maven)](https://spring.io/projects/spring-boot) |
 | 🧩 **Banco de Dados** | MySQL |
-| 🤖 **IA / Processamento de Imagem** | OpenCV / TensorFlow |
+| 🤖 **IA / Processamento de Imagem** | OpenIa(Vision) |
 
 ---
 
