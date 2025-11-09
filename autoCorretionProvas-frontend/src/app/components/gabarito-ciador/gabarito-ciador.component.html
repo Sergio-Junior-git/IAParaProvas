@@ -1,0 +1,31 @@
+<mat-card>
+  <h2>Criar Gabarito</h2>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Quantidade de Questões</mat-label>
+      <input matInput type="number" [(ngModel)]="numQuestions">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Alternativas por questão</mat-label>
+      <input matInput type="number" [(ngModel)]="numAlternatives">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="gerarGabarito()">Gerar</button>
+  </div>
+
+  <div *ngIf="gabarito.length">
+    <div *ngFor="let questao of gabarito; let i = index" style="margin-top: 1rem;">
+      <p><b>Questão {{i + 1}}</b></p>
+      <mat-radio-group [(ngModel)]="gabarito[i]">
+        <mat-radio-button *ngFor="let alt of getAlternatives()"
+            [value]="alt">
+            {{alt}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+    <button mat-raised-button color="accent" style="margin-top: 1.5rem;" (click)="salvarTemplate()">Salvar Gabarito</button>
+  </div>
+</mat-card>

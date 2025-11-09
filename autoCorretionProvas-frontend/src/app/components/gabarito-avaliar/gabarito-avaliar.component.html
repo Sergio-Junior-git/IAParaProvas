@@ -1,0 +1,15 @@
+<mat-card>
+  <h2>Avaliar Prova</h2>
+
+  <mat-form-field>
+    <mat-label>ID do Template</mat-label>
+    <input matInput type="number" [(ngModel)]="templateId">
+  </mat-form-field>
+
+  <input type="file" (change)="onFileSelected($event)">
+  <button mat-raised-button color="primary" (click)="enviarProva()">Enviar</button>
+
+  <div *ngIf="nota !== undefined" style="margin-top: 1rem;">
+    <h3>Nota: {{nota}} / 10</h3>
+  </div>
+</mat-card>
