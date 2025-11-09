@@ -21,37 +21,42 @@
 ✅ **Upload de imagens** de gabaritos preenchidos  
 ✅ **Correção automática** baseada no template  
 ✅ Interface intuitiva com **Angular Material**  
-✅ Relatório de desempenho dos alunos  
+
+# 📘 Instruções:
+
+- Passo 1: Instale as dependências  
+- Passo 2: Rode o servidor backend  
+- Passo 3: Rode o frontend com `ng serve`
 
 # Rodar o Back-end
 
-./mvnw spring-boot:run
-ou 
+./mvnw spring-boot:run  
+ou  
 você pode rodar o arquivo **AutoCorretionProvasApplication.java** que é muito mais recomendavel
 
 
 # Rodar o Front-end
 
-npm install
-ng serve
+npm install  
+ng serve  
 
 aplicação rodara na url: http://localhost:4200
 
 # Estrutura do projeto 
 
-📁 sistema-gabaritos/
- ├── 📁 backend/
- │    ├── src/main/java/...
- │    ├── pom.xml
- │
- ├── 📁 frontend/
- │    ├── src/app/
- │    ├── angular.json
- │
- └── README.md
+📁 sistema-gabaritos/  
+ ├── 📁 backend/  
+ │    ├── src/main/java/...  
+ │    ├── pom.xml  
+ │  
+ ├── 📁 frontend/  
+ │    ├── src/app/  
+ │    ├── angular.json  
+ │  
+ └── README.md  
 
 # 👨‍💻 Desenvolvido por
 
-**Sérgio José**
-💼 Sistema experimental de correção automática com IA
+**Sérgio José**  
+💼 Sistema experimental de correção automática com IA  
 📧 sergio.galdino.junior01@gmail.com
